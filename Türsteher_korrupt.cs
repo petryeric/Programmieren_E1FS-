@@ -14,7 +14,11 @@ namespace If_Statement
             string input = Console.ReadLine();
             int alter = int.Parse(input);
 
-            if (alter >= 18)
+            Console.WriteLine("Hast du eine Maske dabei");
+            string input5 = Console.ReadLine();
+            bool maske = bool.Parse(input5);
+
+            if (alter >= 18 && maske == true)
             {
                 Console.WriteLine("Ausweis?");
                 string input2 = Console.ReadLine();
