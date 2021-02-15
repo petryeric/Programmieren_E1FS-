@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.CodeDom;
+using System.Security.Cryptography.X509Certificates;
 
 namespace If_Statement
 {
@@ -14,7 +12,7 @@ namespace If_Statement
             string input = Console.ReadLine();
             int alter = int.Parse(input);
 
-            Console.WriteLine("Hast du eine Maske dabei");
+            Console.WriteLine("Hast du eine Maske dabei?");
             string input5 = Console.ReadLine();
             bool maske = bool.Parse(input5);
 
@@ -28,17 +26,17 @@ namespace If_Statement
                 {
                     Console.WriteLine("Viel Spaß im Club");
                 }
-               else if(ausweis == false)
+                else if (ausweis == false)
                 {
                     Console.WriteLine("Bist du bereit zu zahlen?");
                     string input3 = Console.ReadLine();
                     bool spende = bool.Parse(input3);
-                    if(spende == true)
+                    if (spende == true)
                     {
                         Console.WriteLine("Wie hoch ist die Spende?");
                         string input4 = Console.ReadLine();
                         int summe = int.Parse(input4);
-                        if(summe >= 100)
+                        if (summe >= 100)
                         {
                             Console.WriteLine("Danke für die Spende, du kannst eintreten ");
                         }
@@ -48,8 +46,9 @@ namespace If_Statement
                         }
                     }
                 }
-                
-                else {
+
+                else
+                {
                     Console.WriteLine("Tschüss");
                 }
 
@@ -58,6 +57,11 @@ namespace If_Statement
             }
             else { Console.WriteLine("Tschüss"); }
             Console.ReadKey();
+
+            
+            
+          
+
         }
     }
 }
