@@ -14,7 +14,7 @@ namespace Übungsaufgabe_13092021
 
         }
 
-        public static double Rechner(double zahl1, double zahl2)
+        public double Rechner(double zahl1, double zahl2)
         {
             Console.WriteLine("Geben Sie die Rechenoperation ein");
             string Operation = Console.ReadLine();
