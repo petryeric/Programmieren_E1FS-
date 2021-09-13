@@ -4,31 +4,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Loops
+namespace Taschenrechner_V1
 {
     class Program
     {
+        
+
         static void Main(string[] args)
         {
-            int Zähler = 0;
-            Console.WriteLine("Welche Art von Zahl soll angegeben werden?");
-            string input = Console.ReadLine();
-           
-            while (Zähler <= 100)
-            {
-                if (Zähler % 2 == 0 && input == "gerade")
-                {
-                    Console.WriteLine(Zähler + " ist eine gerade Zahl");
+            Console.WriteLine("Taschenrechner");
+            Console.WriteLine("Gebe die erste Zahl ein die du Berechnen willst");
+            int Zahl1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Gebe die zweite Zahl ein die du Berechnen willst");
+            int Zahl2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Bitte gebe +, -, *, / ein");
+            String Rechenzeichen = Console.ReadLine();
+            int rechner = Rechner(Zahl1, Zahl2, Rechenzeichen);
+            Console.WriteLine(rechner);
+            Console.ReadKey();
+            
+            
 
-                }
-                else if (Zähler % 2 == 1 && input == "ungerade") 
-                {
-                    Console.WriteLine(Zähler + " ist eine ungerade Zahl");
-                }
-             
-                Zähler++;
+        }
+        static int Rechner(int Zahl1, int Zahl2, string Rechenzeichen)
+
+        {
+
+            
+            switch (Rechenzeichen)
+            {
+                case "*":
+                    return Zahl1 * Zahl2;
+                    
+                case "/":
+                    if (Zahl1 > Zahl2)
+                        return Zahl1 / Zahl2;
+                    else
+                        return Zahl1 / Zahl2;
+                    
+                case "+":
+                    return Zahl1 + Zahl2;
+
+                case "-":
+                    return Zahl1 - Zahl2;
+                    break;
+                default:
+                    Console.WriteLine("Bitte gebe +, -, *, / ein");
+                    break;
             }
             Console.ReadKey();
+            return 0;
+            
+       
+        
         }
+        
+           
+        
     }
 }
