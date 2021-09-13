@@ -1,5 +1,4 @@
-# Programmieren_E1FS-
+# Programmieren_E2FS1
 
-Hier werden Sachen für Programmieren hochgeladen, wie Codeschnipsel o.ä
-
-die entwicklungsumgebung die wir nutzen werden, ist visual studio 
+Hier werden die Lösungen aus den SAEL Stunden hochgeladen.
+Falls ihr selbst Lösungen hinzufügen wollt, bitte das Repo forken und dann einen Pull-Request machen
