@@ -1,0 +1,6 @@
+C:\Users\dennis.rother\source\repos\Schaultung\Schaultung\bin\Debug\Schaultung.exe.config
+C:\Users\dennis.rother\source\repos\Schaultung\Schaultung\bin\Debug\Schaultung.exe
+C:\Users\dennis.rother\source\repos\Schaultung\Schaultung\bin\Debug\Schaultung.pdb
+C:\Users\dennis.rother\source\repos\Schaultung\Schaultung\obj\Debug\Schaultung.csprojAssemblyReference.cache
+C:\Users\dennis.rother\source\repos\Schaultung\Schaultung\obj\Debug\Schaultung.exe
+C:\Users\dennis.rother\source\repos\Schaultung\Schaultung\obj\Debug\Schaultung.pdb
