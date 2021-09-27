@@ -33,8 +33,8 @@ namespace LEITUNGEN
 
             }
             Console.WriteLine("1 für Reinschaltung und 2 für Paralellschaltung");
-            string lol = Console.ReadLine();
-            if (lol == "1") {
+            string Angabe = Console.ReadLine();
+            if (Angabe == "1") {
 
                 Reihenschaltung = x.Sum();
                 Console.WriteLine(Reihenschaltung);
@@ -43,7 +43,7 @@ namespace LEITUNGEN
               
 
             //Paralell
-            else if (lol == "2")
+            else if (Angabe == "2")
             {
                 for (int j = 1; j < anzahl; j++)
                 {
@@ -53,7 +53,7 @@ namespace LEITUNGEN
                     Paralellsumme += 1 / x[j];
 
                 }
-                Console.WriteLine(1/Paralellsumme);
+                Console.WriteLine(1/(1/Paralellsumme));
 
             }
                 
