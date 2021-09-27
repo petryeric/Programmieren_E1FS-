@@ -45,6 +45,7 @@ namespace Übungsaufgabe_13092021
                    
                 default:
                     Console.WriteLine("Bitte geben Sie eine korrekte Operation ein");
+                    Ergebnis = Rechner(zahl1, zahl2);
                     
                     return 0;
 
